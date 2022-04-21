@@ -2,6 +2,7 @@ import { Component, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { DialogData } from './DialogData';
 import { ModalComponent } from './modal/modal.component';
+// import { AngularDialogComponent } from './angular-dialog/angular-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,9 @@ import { ModalComponent } from './modal/modal.component';
 export class AppComponent {
   animal!: string;
   name!: string;
+  showDialog = false;
 
-  constructor(public dialog: MatDialog,) {}
+  constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ModalComponent, {
@@ -26,6 +28,7 @@ export class AppComponent {
       this.animal = result;
     });
   }
+
 
   // ngOnInit() {
   //   this.dialogRef

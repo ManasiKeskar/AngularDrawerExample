@@ -5,4 +5,7 @@
     outline: 2px solid blue;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    animation: slidein 30s ease-in 1s 1 reverse forwards;
+    // animation: 3s ease-in 1s infinite reverse both pause slidein;
+    // ['animate__animated','animate__slideInLeft']
 }

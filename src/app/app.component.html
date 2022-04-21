@@ -14,3 +14,10 @@
     </li>
   </ol>
 </div>
+
+<button (click)="showDialog = !showDialog" class="btn">Open</button>
+
+<app-angular-dialog [(visible)]="showDialog">
+  <h1>Hello World</h1>
+  <button (click)="showDialog = !showDialog" class="btn">Close</button>
+</app-angular-dialog>
